@@ -12,22 +12,46 @@
 
     <div class="bento-grid">
         <div class="card bio">
-            <img src="profile.jpg" alt="Youssef Cherkaoui" class="avatar">
-            <h1>Youssef Cherkaoui</h1>
-            <h2 class="role">CS Student & IT Technician</h2>
-            <p>Sviluppo software, risolvo problemi IT e costruisco soluzioni digitali.</p>
-            <div class="location">📍 Torino, Italia</div>
+            <div class="bio-content">
+                <img src="profile.jpg" alt="Youssef Cherkaoui" class="avatar">
+                <h1>Youssef Cherkaoui</h1>
+                <h2 class="role">I am a <span class="typing-text"></span></h2>
+                <p>Trasformo idee in codice pulito e soluzioni IT efficienti.</p>
+                <a href="cv.pdf" download class="btn-download">
+                    <i class="fa-solid fa-download"></i> Scarica CV
+                </a>
+            </div>
         </div>
 
         <div class="card skills">
             <h3>Tech Stack</h3>
             <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>C#</span>
-                <span>PHP</span>
-                <span>Python</span>
-                <span>Java</span>
+                <span><i class="fa-brands fa-html5"></i> HTML</span>
+                <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span><i class="fa-brands fa-python"></i> Python</span>
+                <span><i class="fa-brands fa-java"></i> Java</span>
+                <span><i class="fa-solid fa-code"></i> C#</span>
+                <span><i class="fa-brands fa-php"></i> PHP</span>
+            </div>
+        </div>
+
+        <div class="card projects">
+            <h3>Progetti Recenti</h3>
+            <div class="project-item">
+                <div class="project-icon">🚀</div>
+                <div class="project-info">
+                    <h4>Gestionale Magazzino</h4>
+                    <p>Software in Java per la gestione inventario.</p>
+                </div>
+                <a href="#" class="arrow">↗</a>
+            </div>
+            <div class="project-item">
+                <div class="project-icon">🌐</div>
+                <div class="project-info">
+                    <h4>Portfolio Personale</h4>
+                    <p>Sito web responsive in HTML5/CSS3.</p>
+                </div>
+                <a href="#" class="arrow">↗</a>
             </div>
         </div>
 
@@ -47,15 +71,48 @@
 
         <div class="card education">
             <h3>Formazione</h3>
-            <p><strong>Laurea in Informatica</strong><br>Università di Torino</p>
-            <p><strong>Diploma Sistemi Informativi</strong><br>IIS Copernico-Luxemburg</p>
+            <div class="edu-item">
+                <strong>Laurea Informatica</strong>
+                <p>Università di Torino</p>
+            </div>
         </div>
 
         <a href="mailto:youssef.carton@icloud.com" class="card contact">
-            <h3>Contattami</h3>
-            <p>youssef.carton@icloud.com ↗</p>
+            <h3>Lavoriamo insieme?</h3>
+            <p>youssef.carton@icloud.com <i class="fa-solid fa-envelope"></i></p>
         </a>
     </div>
 
+    <script>
+        const textElement = document.querySelector(".typing-text");
+        const words = ["Developer", "Student", "IT Technician", "Problem Solver"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentWord = words[wordIndex];
+            
+            if (isDeleting) {
+                textElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                textElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                setTimeout(type, 2000); // Pausa quando finisce la parola
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(type, 500);
+            } else {
+                setTimeout(type, isDeleting ? 100 : 200);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", type);
+    </script>
 </body>
 </html>
