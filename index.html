@@ -3,89 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youssef Cherkaoui | Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfolio di Youssef Cherkaoui - Developer specializzato in Python, Java e Web Development.">
+    <meta name="author" content="Youssef Cherkaoui">
+    
+    <title>Youssef Cherkaoui | Software Developer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="bento-grid">
-        <div class="card bio">
+    <main class="bento-grid">
+        <header class="card bio">
             <div class="bio-content">
-                <img src="profile.jpg" alt="Youssef Cherkaoui" class="avatar">
+                <img src="profile.jpg" alt="Foto profilo di Youssef Cherkaoui" class="avatar">
                 <h1>Youssef Cherkaoui</h1>
                 <h2 class="role">I am a <span class="typing-text"></span></h2>
-                <p>Trasformo idee in codice pulito e soluzioni IT efficienti.</p>
-                <a href="cv.pdf" download class="btn-download">
-                    <i class="fa-solid fa-download"></i> Scarica CV
-                </a>
+                <p>Trasformo idee complesse in codice pulito e soluzioni IT efficienti.</p>
+                
+                <div class="bio-actions">
+                    <a href="cv.pdf" download class="btn-download primary">
+                        <i class="fa-solid fa-download"></i> Scarica CV
+                    </a>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/iltuoprofilo" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/iltuoprofilo" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </header>
 
-        <div class="card skills">
+        <section class="card skills">
             <h3>Tech Stack</h3>
             <div class="tags">
-                <span><i class="fa-brands fa-html5"></i> HTML</span>
-                <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
                 <span><i class="fa-brands fa-python"></i> Python</span>
                 <span><i class="fa-brands fa-java"></i> Java</span>
                 <span><i class="fa-solid fa-code"></i> C#</span>
                 <span><i class="fa-brands fa-php"></i> PHP</span>
+                <span><i class="fa-solid fa-database"></i> SQL</span>
             </div>
-        </div>
+        </section>
 
-        <div class="card projects">
-            <h3>Progetti Recenti</h3>
-            <div class="project-item">
+        <section class="card projects">
+            <h3>Progetti Selezionati</h3>
+            <article class="project-item">
                 <div class="project-icon">🚀</div>
                 <div class="project-info">
                     <h4>Gestionale Magazzino</h4>
-                    <p>Software in Java per la gestione inventario.</p>
+                    <p>Software Java per gestione inventario e logistica.</p>
                 </div>
-                <a href="#" class="arrow">↗</a>
-            </div>
-            <div class="project-item">
+                <a href="#" class="arrow" aria-label="Vedi progetto">↗</a>
+            </article>
+            <article class="project-item">
                 <div class="project-icon">🌐</div>
                 <div class="project-info">
                     <h4>Portfolio Personale</h4>
-                    <p>Sito web responsive in HTML5/CSS3.</p>
+                    <p>Sito web responsive e performante.</p>
                 </div>
-                <a href="#" class="arrow">↗</a>
-            </div>
-        </div>
+                <a href="#" class="arrow" aria-label="Vedi progetto">↗</a>
+            </article>
+        </section>
 
-        <div class="card experience">
-            <h3>Esperienza</h3>
+        <section class="card experience">
+            <h3>Percorso Professionale</h3>
             <div class="job">
                 <h4>Tecnico Informatico</h4>
                 <p class="company">REAR Multiservice Group</p>
-                <small>2024 - Presente</small>
+                <small class="date">2024 - Presente</small>
             </div>
             <div class="job">
                 <h4>Stage IT</h4>
                 <p class="company">ENOS SRL</p>
-                <small>2021 - 2022</small>
+                <small class="date">2021 - 2022</small>
             </div>
-        </div>
+        </section>
 
-        <div class="card education">
+        <section class="card education">
             <h3>Formazione</h3>
             <div class="edu-item">
-                <strong>Laurea Informatica</strong>
-                <p>Università di Torino</p>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                    <strong>Laurea in Informatica</strong>
+                    <p>Università degli Studi di Torino</p>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <a href="mailto:youssef.carton@icloud.com" class="card contact">
-            <h3>Lavoriamo insieme?</h3>
-            <p>youssef.carton@icloud.com <i class="fa-solid fa-envelope"></i></p>
+        <a href="mailto:youssef.cherkaoui@outlook.it" class="card contact">
+            <div class="contact-content">
+                <h3>Collaboriamo?</h3>
+                <p class="email-text">youssef.cherkaoui@outlook.it</p>
+                <div class="icon-box"><i class="fa-solid fa-paper-plane"></i></div>
+            </div>
         </a>
-    </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Youssef Cherkaoui. All rights reserved.</p>
+    </footer>
 
     <script>
+        // Typing Effect
         const textElement = document.querySelector(".typing-text");
-        const words = ["Developer", "Student", "IT Technician", "Problem Solver"];
+        const words = ["Developer", "IT Specialist", "Problem Solver", "Tech Enthusiast"];
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -103,15 +127,19 @@
 
             if (!isDeleting && charIndex === currentWord.length) {
                 isDeleting = true;
-                setTimeout(type, 2000); // Pausa quando finisce la parola
+                setTimeout(type, 2000); 
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
                 wordIndex = (wordIndex + 1) % words.length;
                 setTimeout(type, 500);
             } else {
-                setTimeout(type, isDeleting ? 100 : 200);
+                setTimeout(type, isDeleting ? 100 : 150);
             }
         }
+        
+        // Auto-update Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
         document.addEventListener("DOMContentLoaded", type);
     </script>
 </body>
