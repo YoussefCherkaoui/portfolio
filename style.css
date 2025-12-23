@@ -1,12 +1,12 @@
 /* --- 1. VARIABILI & RESET (Palette Business) --- */
 :root {
-    --bg-main: #09090b;       /* Nero profondo, quasi grigio */
+    --bg-main: #09090b;       /* Nero profondo */
     --card-bg: #18181b;       /* Grigio scuro opaco */
     --border: #27272a;        /* Bordi sottili grigi */
-    --text-main: #f4f4f5;     /* Bianco sporco (non stanca gli occhi) */
-    --text-muted: #a1a1aa;    /* Grigio medio per testi secondari */
-    --accent: #3b82f6;        /* Blu "Professional" (Royal Blue) */
-    --accent-hover: #2563eb;  /* Blu più scuro per hover */
+    --text-main: #f4f4f5;     /* Bianco sporco */
+    --text-muted: #a1a1aa;    /* Grigio medio */
+    --accent: #3b82f6;        /* Blu Professional */
+    --accent-hover: #2563eb;  /* Blu scuro hover */
 }
 
 * {
@@ -31,7 +31,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(160px, auto); 
-    gap: 16px; /* Spaziatura più stretta e precisa */
+    gap: 16px;
     max-width: 1000px;
     width: 100%;
 }
@@ -40,7 +40,7 @@ body {
 .card {
     background: var(--card-bg);
     border: 1px solid var(--border);
-    border-radius: 12px; /* Angoli meno arrotondati, più seri */
+    border-radius: 12px;
     padding: 24px;
     position: relative;
     display: flex;
@@ -49,8 +49,8 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-2px); /* Movimento minimo */
-    border-color: var(--text-muted); /* Il bordo diventa leggermente più chiaro */
+    transform: translateY(-2px);
+    border-color: var(--text-muted);
 }
 
 /* --- 4. SEZIONE BIO --- */
@@ -64,7 +64,7 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 2px solid var(--border); /* Bordo grigio, non colorato */
+    border: 2px solid var(--border);
     margin-bottom: 20px;
     object-fit: cover;
 }
@@ -79,7 +79,7 @@ body {
 
 .role {
     color: var(--accent);
-    font-family: 'JetBrains Mono', monospace; /* Solo questo in monospazio */
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.95rem;
     font-weight: 500;
     margin-top: 0;
@@ -93,15 +93,21 @@ body {
 }
 @keyframes blink { 50% { border-color: transparent; } }
 
-/* Bottone Download CV (Stile Pulsante Primario) */
+/* Bottoni e Social */
+.bio-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 15px;
+}
+
 .btn-download {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-top: 20px;
     padding: 10px 20px;
-    background-color: var(--text-main); /* Bianco */
-    color: var(--bg-main);              /* Testo nero */
+    background-color: var(--text-main);
+    color: var(--bg-main);
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
@@ -114,7 +120,18 @@ body {
     background-color: #d4d4d8;
 }
 
-/* --- 5. TECH STACK (Pulito) --- */
+.social-links a {
+    color: var(--text-main); /* CORRETTO: Ora sono bianchi, prima erano scuri */
+    font-size: 1.5rem;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    color: var(--accent);
+}
+
+/* --- 5. TECH STACK --- */
 .skills {
     grid-column: span 2;
 }
@@ -225,7 +242,7 @@ body {
 .edu-item strong { display: block; font-size: 0.95rem; }
 .edu-item p { color: var(--text-muted); font-size: 0.85rem; margin: 4px 0; }
 
-/* --- 9. CONTATTO --- */
+/* --- 9. CONTATTO & FOOTER --- */
 .contact {
     grid-column: span 2;
     background-color: var(--accent);
@@ -244,39 +261,31 @@ body {
     border-color: transparent;
 }
 .contact p { margin: 0; display: flex; align-items: center; gap: 10px; }
-
-/* --- RESPONSIVE --- */
-@media (max-width: 900px) {
-    .bento-grid {
-        grid-template-columns: 1fr;
-        display: flex;
-        flex-direction: column;
-    }
-    .bio h1 { font-size: 1.8rem; }
-}
-
-/* Aggiungi questo alla fine del file style.css */
-.bio-actions {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.social-links a {
-    color: #333; /* Cambia con il tuo colore testo */
-    font-size: 1.5rem;
-    transition: transform 0.2s;
-}
-
-.social-links a:hover {
-    transform: translateY(-3px);
-    color: #007bff; /* Cambia con il tuo colore accento */
-}
+.contact .email-text { font-size: 1rem; }
 
 footer {
     text-align: center;
     padding: 20px;
     font-size: 0.8rem;
     opacity: 0.7;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* --- 10. RESPONSIVE (MOBILE & TABLET) --- */
+@media (max-width: 900px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+    
+    .card { width: 100%; }
+    
+    .bio h1 { font-size: 1.8rem; }
+    
+    body { padding: 10px; } /* Meno padding sui bordi del telefono */
 }
