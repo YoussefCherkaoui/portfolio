@@ -1,156 +1,251 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio di Youssef Cherkaoui - Developer specializzato in Python, Java e Web Development.">
-    <meta name="author" content="Youssef Cherkaoui">
-    
-    <title>Youssef Cherkaoui | Software Developer</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio di Youssef Cherkaoui - Developer specializzato in Python, Java e Web Development." />
+  <meta name="author" content="Youssef Cherkaoui" />
+  <meta name="theme-color" content="#09090b" />
+
+  <title>Youssef Cherkaoui | Software Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <main class="bento-grid" aria-label="Portfolio di Youssef Cherkaoui">
 
-    <main class="bento-grid">
-        <header class="card bio">
-            <div class="bio-content">
-                <img src="profile.jpg" alt="Foto profilo di Youssef Cherkaoui" class="avatar">
-                <h1>Youssef Cherkaoui</h1>
-                <h2 class="role">I am a <span class="typing-text"></span></h2>
-                <p>Trasformo idee complesse in codice pulito e soluzioni IT efficienti.</p>
-                
-                <div class="bio-actions">
-                    <a href="cv.pdf" download class="btn-download primary">
-                        <i class="fa-solid fa-download"></i> Scarica CV
-                    </a>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/youssef-cherkaoui/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/YoussefCherkaoui" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <header class="card bio">
+      <div class="bio-content">
+        <img
+          src="profile.jpg"
+          alt="Foto profilo di Youssef Cherkaoui"
+          class="avatar"
+          loading="lazy"
+          width="80"
+          height="80"
+        />
 
-        <section class="card skills">
-            <h3>Tech Stack</h3>
-            <div class="tags">
-                <span><i class="fa-brands fa-html5"></i> HTML5</span>
-                <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-                <span><i class="fa-brands fa-python"></i> Python</span>
-                <span><i class="fa-brands fa-java"></i> Java</span>
-                <span><i class="fa-solid fa-code"></i> C#</span>
-                <span><i class="fa-brands fa-php"></i> PHP</span>
-                <span><i class="fa-solid fa-database"></i> SQL</span>
-            </div>
-        </section>
+        <h1>Youssef Cherkaoui</h1>
+        <h2 class="role">I am a <span class="typing-text"></span></h2>
 
-        <section class="card projects">
-            <h3>Progetti Selezionati</h3>
-            <article class="project-item">
-                <div class="project-icon">🚀</div>
-                <div class="project-info">
-                    <h4>Gestionale Magazzino</h4>
-                    <p>Software Java per gestione inventario e logistica.</p>
-                </div>
-                <a href="#" class="arrow" aria-label="Vedi progetto">↗</a>
-            </article>
-            <article class="project-item">
-                <div class="project-icon">🌐</div>
-                <div class="project-info">
-                    <h4>Portfolio Personale</h4>
-                    <p>Sito web responsive e performante.</p>
-                </div>
-                <a href="#" class="arrow" aria-label="Vedi progetto">↗</a>
-            </article>
-        </section>
+        <p class="bio-sub">
+          Sviluppo applicazioni web e software orientati a performance, chiarezza e manutenzione.
+        </p>
 
-        <section class="card experience">
-            <h3>Percorso Professionale</h3>
-            <div class="job">
-                <h4>Tecnico Informatico</h4>
-                <p class="company">REAR Multiservice Group</p>
-                <small class="date">2024 - Presente</small>
-            </div>
-            <div class="job">
-                <h4>Stage IT</h4>
-                <p class="company">ENOS SRL</p>
-                <small class="date">2021 - 2022</small>
-            </div>
-        </section>
+        <div class="bio-actions">
+          <a href="cv.pdf" download class="btn-download primary">
+            <i class="fa-solid fa-download"></i> Scarica CV
+          </a>
 
-        <section class="card education">
-            <h3>Formazione</h3>
-            
-            <div class="edu-item">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <div>
-                    <strong>Laurea in Informatica (In corso)</strong>
-                    <p>Università degli Studi di Torino</p>
-                </div>
-            </div>
+          <div class="social-links" aria-label="Social">
+            <a
+              href="https://www.linkedin.com/in/youssef-cherkaoui/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
 
-            <hr style="border: 0; border-top: 1px solid #eee; margin: 10px 0;">
+            <a
+              href="https://github.com/YoussefCherkaoui"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              title="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
 
-            <div class="edu-item">
-                <i class="fa-solid fa-school"></i>
-                <div>
-                    <strong>Sistemi Informativi Aziendali</strong>
-                    <p>I.I.S. Copernico-Luxemburg (Torino)</p>
-                    <small style="color: #666;">Diploma di Maturità</small>
-                </div>
-            </div>
-        </section>
+        <div class="availability" aria-label="Disponibilità">
+          <span class="badge">
+            <i class="fa-solid fa-bolt"></i> Disponibile per: Stage / Junior / Freelance
+          </span>
+        </div>
 
-        <a href="mailto:youssef.cherkaoui@outlook.it" class="card contact">
-            <div class="contact-content">
-                <h3>Collaboriamo?</h3>
-                <p class="email-text">youssef.cherkaoui@outlook.it</p>
-                <div class="icon-box"><i class="fa-solid fa-paper-plane"></i></div>
-            </div>
-        </a>
-    </main>
+      </div>
+    </header>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Youssef Cherkaoui. All rights reserved.</p>
-    </footer>
+    <section class="card skills" aria-label="Competenze">
+      <h3>Tech Stack</h3>
+      <div class="tags">
+        <span><i class="fa-brands fa-html5"></i> HTML5</span>
+        <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+        <span><i class="fa-brands fa-python"></i> Python</span>
+        <span><i class="fa-brands fa-java"></i> Java</span>
+        <span><i class="fa-solid fa-code"></i> C#</span>
+        <span><i class="fa-brands fa-php"></i> PHP</span>
+        <span><i class="fa-solid fa-database"></i> SQL</span>
+        <span><i class="fa-brands fa-git-alt"></i> Git</span>
+      </div>
+    </section>
 
-    <script>
-        // Typing Effect
-        const textElement = document.querySelector(".typing-text");
-        const words = ["Developer", "IT Specialist", "Problem Solver", "Tech Enthusiast"];
-        let wordIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
+    <section class="card projects" aria-label="Progetti">
+      <h3>Progetti Selezionati</h3>
 
-        function type() {
-            const currentWord = words[wordIndex];
-            
-            if (isDeleting) {
-                textElement.textContent = currentWord.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                textElement.textContent = currentWord.substring(0, charIndex + 1);
-                charIndex++;
-            }
+      <!-- PROGETTO PRINCIPALE -->
+      <a
+        class="project-item"
+        href="https://github.com/YoussefCherkaoui/RacketMasterScore"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Apri progetto RacketMasterScore su GitHub"
+      >
+        <div class="project-icon">🎾</div>
 
-            if (!isDeleting && charIndex === currentWord.length) {
-                isDeleting = true;
-                setTimeout(type, 2000); 
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                wordIndex = (wordIndex + 1) % words.length;
-                setTimeout(type, 500);
-            } else {
-                setTimeout(type, isDeleting ? 100 : 150);
-            }
-        }
-        
-        document.getElementById('year').textContent = new Date().getFullYear();
-        document.addEventListener("DOMContentLoaded", type);
-    </script>
+        <div class="project-info">
+          <h4>RacketMaster – Score App</h4>
+          <p>
+            Applicazione per la gestione e il tracciamento dei punteggi sportivi.
+            Logica di scoring, gestione partite e interfaccia intuitiva.
+          </p>
+
+          <div class="project-meta" aria-label="Tecnologie progetto">
+            <span>App</span>
+            <span>OOP</span>
+            <span>UI</span>
+            <span>Persistenza</span>
+          </div>
+        </div>
+
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <!-- PROGETTO SECONDARIO -->
+      <a
+        class="project-item"
+        href="https://github.com/YoussefCherkaoui/portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Apri progetto portfolio su GitHub"
+      >
+        <div class="project-icon">🌐</div>
+
+        <div class="project-info">
+          <h4>Portfolio Personale</h4>
+          <p>
+            Sito web responsive progettato come vetrina professionale,
+            con focus su design, accessibilità e micro-interazioni.
+          </p>
+
+          <div class="project-meta" aria-label="Tecnologie progetto">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Responsive</span>
+          </div>
+        </div>
+
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <section class="card experience" aria-label="Esperienza">
+      <h3>Percorso Professionale</h3>
+
+      <div class="job">
+        <h4>Tecnico Informatico</h4>
+        <p class="company">REAR Multiservice Group</p>
+        <small class="date">2024 - Presente</small>
+      </div>
+
+      <div class="job">
+        <h4>Stage IT</h4>
+        <p class="company">ENOS SRL</p>
+        <small class="date">2021 - 2022</small>
+      </div>
+    </section>
+
+    <section class="card education" aria-label="Formazione">
+      <h3>Formazione</h3>
+
+      <div class="edu-item">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div>
+          <strong>Laurea in Informatica (In corso)</strong>
+          <p>Università degli Studi di Torino</p>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="edu-item">
+        <i class="fa-solid fa-school"></i>
+        <div>
+          <strong>Sistemi Informativi Aziendali</strong>
+          <p>I.I.S. Copernico-Luxemburg (Torino)</p>
+          <small class="muted">Diploma di Maturità</small>
+        </div>
+      </div>
+    </section>
+
+    <a
+      href="mailto:youssef.cherkaoui@outlook.it"
+      class="card contact"
+      aria-label="Invia una mail a youssef.cherkaoui@outlook.it"
+    >
+      <div class="contact-content">
+        <h3>Collaboriamo?</h3>
+        <p class="email-text">youssef.cherkaoui@outlook.it</p>
+        <div class="icon-box"><i class="fa-solid fa-paper-plane"></i></div>
+      </div>
+    </a>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Youssef Cherkaoui. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Typing Effect (rispetta prefers-reduced-motion)
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const textElement = document.querySelector(".typing-text");
+    const words = ["Developer", "IT Specialist", "Problem Solver", "Tech Enthusiast"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      if (reduceMotion || !textElement) return;
+
+      const currentWord = words[wordIndex];
+
+      if (isDeleting) {
+        textElement.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        textElement.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        setTimeout(type, 2000);
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(type, 500);
+      } else {
+        setTimeout(type, isDeleting ? 100 : 150);
+      }
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.addEventListener("DOMContentLoaded", () => {
+      if (!reduceMotion) type();
+      else if (textElement) textElement.textContent = "Developer";
+    });
+  </script>
 </body>
 </html>
