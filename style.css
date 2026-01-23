@@ -368,6 +368,7 @@ a:focus-visible,
 /* --- 8. EDUCAZIONE --- */
 .education {
   grid-column: span 1;
+  grid-row: span 2;
 }
 
 .edu-item {
