@@ -558,3 +558,72 @@ footer {
 .project-soon .arrow {
   display: none;
 }
+
+/* ===== MOBILE/TABLET TOUCH FEEDBACK (no hover) ===== */
+@media (hover: none) and (pointer: coarse) {
+  /* Elimina highlight brutto iOS */
+  a, button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Card: feedback quando tocchi */
+  .card:active {
+    transform: translateY(-2px);
+    border-color: rgba(244,244,245,0.25);
+    box-shadow: var(--shadow);
+  }
+
+  /* Project item (link): feedback tap */
+  .project-item {
+    border-radius: 12px;          /* così l'active è bello */
+    padding: 14px 10px;           /* un po’ più “touch friendly” */
+    margin: 2px 0;
+  }
+
+  .project-item:active {
+    background: rgba(255,255,255,0.04);
+  }
+
+  .project-item:active .arrow {
+    color: var(--text-main);
+    transform: translateX(3px);
+  }
+
+  /* Bottoni: feedback tap */
+  .btn-download:active {
+    transform: translateY(-1px);
+  }
+
+  .social-links a:active {
+    transform: translateY(-2px);
+    color: var(--accent);
+  }
+
+  /* Contact card: feedback tap */
+  .contact:active {
+    transform: translateY(-2px);
+    background-color: var(--accent-hover);
+  }
+}
+@media (max-width: 900px) {
+  .bio-actions{
+    gap: 12px;
+  }
+
+  .btn-download{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .social-links{
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  a:focus-visible, .project-item:focus-visible, .btn-download:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-soft), var(--ring);
+    border-color: rgba(59,130,246,0.6);
+  }
+}
