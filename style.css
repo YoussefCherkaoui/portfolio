@@ -405,7 +405,7 @@ a:focus-visible,
 
 /* --- 9. CONTATTO & FOOTER --- */
 .contact {
-  grid-column: span 2;
+  grid-column: 1 / -1;
   background-color: var(--accent);
   color: white;
   align-items: center;
