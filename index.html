@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio di Youssef Cherkaoui - Developer specializzato in Python, Java e Web Development." />
+  <meta name="description"
+    content="Portfolio di Youssef Cherkaoui - Developer specializzato in Python, Java e Web Development." />
   <meta name="author" content="Youssef Cherkaoui" />
   <meta name="theme-color" content="#09090b" />
 
@@ -12,7 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=JetBrains+Mono&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <link rel="stylesheet" href="style.css" />
@@ -23,14 +26,8 @@
 
     <header class="card bio">
       <div class="bio-content">
-        <img
-          src="profile1.jpg"
-          alt="Foto profilo di Youssef Cherkaoui"
-          class="avatar"
-          loading="lazy"
-          width="80"
-          height="80"
-        />
+        <img src="profile1.jpg" alt="Foto profilo di Youssef Cherkaoui" class="avatar" loading="lazy" width="80"
+          height="80" />
 
         <h1>Youssef Cherkaoui</h1>
         <h2 class="role">I am a <span class="typing-text"></span></h2>
@@ -45,23 +42,13 @@
           </a>
 
           <div class="social-links" aria-label="Social">
-            <a
-              href="https://www.linkedin.com/in/youssef-cherkaoui/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              title="LinkedIn"
-            >
+            <a href="https://www.linkedin.com/in/youssef-cherkaoui/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn" title="LinkedIn">
               <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a
-              href="https://github.com/YoussefCherkaoui"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-              title="GitHub"
-            >
+            <a href="https://github.com/YoussefCherkaoui" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+              title="GitHub">
               <i class="fa-brands fa-github"></i>
             </a>
           </div>
@@ -90,17 +77,43 @@
       </div>
     </section>
 
+    <!-- ✅ NUOVA CARD LINGUE -->
+    <section class="card languages" aria-label="Lingue">
+      <h3>Lingue</h3>
+
+      <div class="lang-list">
+        <div class="lang-item">
+          <div class="lang-left">
+            <span class="lang-name">Italiano</span>
+            <span class="lang-level">Madrelingua</span>
+          </div>
+          <div class="lang-bar" aria-hidden="true"><span class="fill w-100"></span></div>
+        </div>
+
+        <div class="lang-item">
+          <div class="lang-left">
+            <span class="lang-name">Spagnolo</span>
+            <span class="lang-level">Madrelingua</span>
+          </div>
+          <div class="lang-bar" aria-hidden="true"><span class="fill w-100"></span></div>
+        </div>
+
+        <div class="lang-item">
+          <div class="lang-left">
+            <span class="lang-name">Inglese</span>
+            <span class="lang-level">Intermedio</span>
+          </div>
+          <div class="lang-bar" aria-hidden="true"><span class="fill w-60"></span></div>
+        </div>
+      </div>
+    </section>
+
     <section class="card projects" aria-label="Progetti">
       <h3>Progetti Selezionati</h3>
 
       <!-- PROGETTO PRINCIPALE -->
-      <a
-        class="project-item"
-        href="https://github.com/YoussefCherkaoui/RacketMaster-Showcase"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Apri progetto RacketMasterScore su GitHub"
-      >
+      <a class="project-item" href="https://github.com/YoussefCherkaoui/RacketMaster-Showcase" target="_blank"
+        rel="noopener noreferrer" aria-label="Apri progetto RacketMaster su GitHub">
         <div class="project-icon">🎾</div>
 
         <div class="project-info">
@@ -122,13 +135,8 @@
       </a>
 
       <!-- PROGETTO SECONDARIO -->
-      <a
-        class="project-item"
-        href="https://github.com/YoussefCherkaoui/portfolio"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Apri progetto portfolio su GitHub"
-      >
+      <a class="project-item" href="https://github.com/YoussefCherkaoui/portfolio" target="_blank"
+        rel="noopener noreferrer" aria-label="Apri progetto portfolio su GitHub">
         <div class="project-icon">🌐</div>
 
         <div class="project-info">
@@ -147,6 +155,24 @@
 
         <span class="arrow" aria-hidden="true">↗</span>
       </a>
+
+      <!-- ✅ PROGETTI IN ARRIVO -->
+      <div class="project-item project-soon" aria-label="Progetti in arrivo">
+        <div class="project-icon">⏳</div>
+
+        <div class="project-info">
+          <h4>Nuovi progetti in arrivo</h4>
+          <p>
+            Sto lavorando a nuovi progetti che verranno pubblicati a breve.
+            Portfolio in aggiornamento.
+          </p>
+
+          <div class="project-meta">
+            <span>In sviluppo</span>
+            <span>Work in progress</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="card experience" aria-label="Esperienza">
@@ -159,7 +185,7 @@
       </div>
 
       <div class="job">
-        <h4>Stage:Gestione Database E Contabilità</h4>
+        <h4>Stage: Gestione Database e Contabilità</h4>
         <p class="company">ENOS SRL</p>
         <small class="date">2021 - 2022</small>
       </div>
@@ -188,11 +214,8 @@
       </div>
     </section>
 
-    <a
-      href="mailto:youssef.cherkaoui@outlook.it"
-      class="card contact"
-      aria-label="Invia una mail a youssef.cherkaoui@outlook.it"
-    >
+    <a href="mailto:youssef.cherkaoui@outlook.it" class="card contact"
+      aria-label="Invia una mail a youssef.cherkaoui@outlook.it">
       <div class="contact-content">
         <h3>Collaboriamo?</h3>
         <p class="email-text">youssef.cherkaoui@outlook.it</p>
@@ -248,4 +271,5 @@
     });
   </script>
 </body>
+
 </html>

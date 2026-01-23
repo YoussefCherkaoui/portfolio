@@ -482,3 +482,79 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+/* --- EXTRA: CARD LINGUE --- */
+.languages {
+  grid-column: span 2;
+}
+
+.languages h3 {
+  margin: 0 0 14px 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.lang-list {
+  display: grid;
+  gap: 14px;
+}
+
+.lang-item {
+  display: grid;
+  gap: 8px;
+}
+
+.lang-left {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.lang-name {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.lang-level {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.lang-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.lang-bar .fill {
+  display: block;
+  height: 100%;
+  background: rgba(59,130,246,0.75);
+  border-radius: 999px;
+}
+
+.w-100 { width: 100%; }
+.w-60 { width: 60%; }
+
+/* --- EXTRA: PROGETTI IN ARRIVO (discreto, non cliccabile) --- */
+.project-soon {
+  opacity: 0.65;
+  cursor: default;
+}
+
+.project-soon:hover {
+  transform: none;
+}
+
+.project-soon .project-icon {
+  background: rgba(255,255,255,0.08);
+}
+
+.project-soon .arrow {
+  display: none;
+}
