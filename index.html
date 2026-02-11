@@ -24,10 +24,11 @@
 <body>
   <main class="bento-grid" aria-label="Portfolio di Youssef Cherkaoui">
 
+    <!-- BIO -->
     <header class="card bio">
       <div class="bio-content">
-        <img src="profile1.jpg" alt="Foto profilo di Youssef Cherkaoui" class="avatar" loading="lazy" width="80"
-          height="80" />
+        <img src="profile1.jpg" alt="Foto profilo di Youssef Cherkaoui"
+          class="avatar" loading="lazy" width="80" height="80" />
 
         <h1>Youssef Cherkaoui</h1>
         <h2 class="role">I am a <span class="typing-text"></span></h2>
@@ -38,25 +39,24 @@
 
         <div class="bio-actions">
           <a class="btn-download primary"
-            href="mailto:youssef.cherkaoui@outlook.it?subject=Richiesta%20CV%20-%20Portfolio&body=Ciao%20Youssef,%0A%0AHo%20visto%20il%20tuo%20portfolio%20e%20vorrei%20ricevere%20il%20tuo%20CV.%0A%0ANome:%20%0ARuolo/Azienda:%20%0AContatto:%20%0A%0AGrazie!"
-            aria-label="Richiedi CV via email">
+            href="mailto:youssef.cherkaoui@outlook.it?subject=Richiesta%20CV%20-%20Portfolio&body=Ciao%20Youssef,%0A%0AHo%20visto%20il%20tuo%20portfolio%20e%20vorrei%20ricevere%20il%20tuo%20CV.%0A%0ANome:%20%0ARuolo/Azienda:%20%0AContatto:%20%0A%0AGrazie!">
             <i class="fa-solid fa-envelope"></i> Richiedi CV
           </a>
 
-          <div class="social-links" aria-label="Social">
-            <a href="https://www.linkedin.com/in/youssef-cherkaoui-a10644287"  target="_blank" rel="noopener noreferrer"
-              aria-label="LinkedIn" title="LinkedIn">
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/youssef-cherkaoui-a10644287"
+              target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a href="https://github.com/YoussefCherkaoui" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-              title="GitHub">
+            <a href="https://github.com/YoussefCherkaoui"
+              target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-github"></i>
             </a>
           </div>
         </div>
 
-        <div class="availability" aria-label="Disponibilità">
+        <div class="availability">
           <span class="badge">
             <i class="fa-solid fa-bolt"></i> Disponibile per: Stage / Junior / Freelance
           </span>
@@ -65,7 +65,8 @@
       </div>
     </header>
 
-    <section class="card skills" aria-label="Competenze">
+    <!-- TECH STACK -->
+    <section class="card skills">
       <h3>Tech Stack</h3>
       <div class="tags">
         <span><i class="fa-brands fa-html5"></i> HTML5</span>
@@ -79,17 +80,16 @@
       </div>
     </section>
 
-    <!-- ✅ NUOVA CARD LINGUE -->
-    <section class="card languages" aria-label="Lingue">
+    <!-- LINGUE -->
+    <section class="card languages">
       <h3>Lingue</h3>
-
       <div class="lang-list">
         <div class="lang-item">
           <div class="lang-left">
             <span class="lang-name">Italiano</span>
             <span class="lang-level">Madrelingua</span>
           </div>
-          <div class="lang-bar" aria-hidden="true"><span class="fill w-100"></span></div>
+          <div class="lang-bar"><span class="fill w-100"></span></div>
         </div>
 
         <div class="lang-item">
@@ -97,7 +97,7 @@
             <span class="lang-name">Spagnolo</span>
             <span class="lang-level">Madrelingua</span>
           </div>
-          <div class="lang-bar" aria-hidden="true"><span class="fill w-100"></span></div>
+          <div class="lang-bar"><span class="fill w-100"></span></div>
         </div>
 
         <div class="lang-item">
@@ -105,79 +105,92 @@
             <span class="lang-name">Inglese</span>
             <span class="lang-level">Intermedio</span>
           </div>
-          <div class="lang-bar" aria-hidden="true"><span class="fill w-60"></span></div>
+          <div class="lang-bar"><span class="fill w-60"></span></div>
         </div>
       </div>
     </section>
 
-    <section class="card projects" aria-label="Progetti">
+    <!-- CERTIFICAZIONI -->
+    <section class="card certifications">
+      <h3>Certificazioni</h3>
+
+      <a href="https://www.credly.com/users/cherkaoui.youssef"
+        target="_blank" rel="noopener noreferrer"
+        class="cert-item">
+
+        <div class="cert-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+
+        <div class="cert-info">
+          <h4>Introduction to Cybersecurity</h4>
+          <p>Cisco Networking Academy</p>
+
+          <div class="cert-meta">
+            <span>Cybersecurity</span>
+            <span>Networking</span>
+            <span>2026</span>
+          </div>
+        </div>
+
+        <span class="arrow">↗</span>
+      </a>
+    </section>
+
+    <!-- PROGETTI -->
+    <section class="card projects">
       <h3>Progetti Selezionati</h3>
 
-      <!-- PROGETTO PRINCIPALE -->
-      <a class="project-item" href="https://github.com/YoussefCherkaoui/RacketMaster-Showcase" target="_blank"
-        rel="noopener noreferrer" aria-label="Apri progetto RacketMaster su GitHub">
+      <a class="project-item"
+        href="https://github.com/YoussefCherkaoui/RacketMaster-Showcase"
+        target="_blank" rel="noopener noreferrer">
+
         <div class="project-icon">🎾</div>
 
         <div class="project-info">
           <h4>RacketMaster – Score App</h4>
           <p>
             Applicazione per la gestione e il tracciamento dei punteggi sportivi.
-            Logica di scoring, gestione partite e interfaccia intuitiva.
           </p>
-
-          <div class="project-meta" aria-label="Tecnologie progetto">
+          <div class="project-meta">
             <span>App</span>
             <span>OOP</span>
             <span>UI</span>
-            <span>Persistenza</span>
           </div>
         </div>
 
-        <span class="arrow" aria-hidden="true">↗</span>
+        <span class="arrow">↗</span>
       </a>
 
-      <!-- PROGETTO SECONDARIO -->
-      <a class="project-item" href="https://github.com/YoussefCherkaoui/portfolio" target="_blank"
-        rel="noopener noreferrer" aria-label="Apri progetto portfolio su GitHub">
+      <a class="project-item"
+        href="https://github.com/YoussefCherkaoui/portfolio"
+        target="_blank" rel="noopener noreferrer">
+
         <div class="project-icon">🌐</div>
 
         <div class="project-info">
           <h4>Portfolio Personale</h4>
-          <p>
-            Sito web responsive progettato come vetrina professionale,
-            con focus su design, accessibilità e micro-interazioni.
-          </p>
-
-          <div class="project-meta" aria-label="Tecnologie progetto">
+          <p>Sito web responsive con design minimal e moderno.</p>
+          <div class="project-meta">
             <span>HTML</span>
             <span>CSS</span>
-            <span>Responsive</span>
           </div>
         </div>
 
-        <span class="arrow" aria-hidden="true">↗</span>
+        <span class="arrow">↗</span>
       </a>
 
-      <!-- ✅ PROGETTI IN ARRIVO -->
-      <div class="project-item project-soon" aria-label="Progetti in arrivo">
+      <div class="project-item project-soon">
         <div class="project-icon">⏳</div>
-
         <div class="project-info">
           <h4>Nuovi progetti in arrivo</h4>
-          <p>
-            Sto lavorando a nuovi progetti che verranno pubblicati a breve.
-            Portfolio in aggiornamento.
-          </p>
-
-          <div class="project-meta">
-            <span>In sviluppo</span>
-            <span>Work in progress</span>
-          </div>
+          <p>Portfolio in aggiornamento.</p>
         </div>
       </div>
     </section>
 
-    <section class="card experience" aria-label="Esperienza">
+    <!-- ESPERIENZA -->
+    <section class="card experience">
       <h3>Percorso Professionale</h3>
 
       <div class="job">
@@ -193,7 +206,8 @@
       </div>
     </section>
 
-    <section class="card education" aria-label="Formazione">
+    <!-- FORMAZIONE -->
+    <section class="card education">
       <h3>Formazione</h3>
 
       <div class="edu-item">
@@ -211,19 +225,22 @@
         <div>
           <strong>Sistemi Informativi Aziendali</strong>
           <p>I.I.S. Copernico-Luxemburg (Torino)</p>
-          <small class="muted">Diploma di Maturità</small>
         </div>
       </div>
     </section>
 
-    <a href="mailto:youssef.cherkaoui@outlook.it" class="card contact"
-      aria-label="Invia una mail a youssef.cherkaoui@outlook.it">
+    <!-- CONTATTO -->
+    <a href="mailto:youssef.cherkaoui@outlook.it"
+      class="card contact">
       <div class="contact-content">
         <h3>Collaboriamo?</h3>
         <p class="email-text">youssef.cherkaoui@outlook.it</p>
-        <div class="icon-box"><i class="fa-solid fa-paper-plane"></i></div>
+        <div class="icon-box">
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
       </div>
     </a>
+
   </main>
 
   <footer>
@@ -231,47 +248,32 @@
   </footer>
 
   <script>
-    // Typing Effect (rispetta prefers-reduced-motion)
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
     const textElement = document.querySelector(".typing-text");
-    const words = ["Developer", "IT Specialist", "Problem Solver", "Tech Enthusiast"];
+    const words = ["Developer", "IT Specialist", "Problem Solver"];
     let wordIndex = 0;
     let charIndex = 0;
-    let isDeleting = false;
 
-    function type() {
-      if (reduceMotion || !textElement) return;
+    function typeOnce() {
+      if (!textElement || reduceMotion) return;
 
-      const currentWord = words[wordIndex];
+      const word = words[wordIndex];
+      textElement.textContent = word.substring(0, charIndex + 1);
+      charIndex++;
 
-      if (isDeleting) {
-        textElement.textContent = currentWord.substring(0, charIndex - 1);
-        charIndex--;
-      } else {
-        textElement.textContent = currentWord.substring(0, charIndex + 1);
-        charIndex++;
+      if (charIndex === word.length) {
+        setTimeout(() => {
+          charIndex = 0;
+          wordIndex = (wordIndex + 1) % words.length;
+        }, 1500);
       }
 
-      if (!isDeleting && charIndex === currentWord.length) {
-        isDeleting = true;
-        setTimeout(type, 2000);
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-        setTimeout(type, 500);
-      } else {
-        setTimeout(type, isDeleting ? 100 : 150);
-      }
+      setTimeout(typeOnce, 90);
     }
 
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    document.addEventListener("DOMContentLoaded", () => {
-      if (!reduceMotion) type();
-      else if (textElement) textElement.textContent = "Developer";
-    });
+    document.addEventListener("DOMContentLoaded", typeOnce);
   </script>
-</body>
 
+</body>
 </html>
